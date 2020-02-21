@@ -2,7 +2,6 @@ import asyncio
 import discord
 import os
 import re
-import youtube_dl
 
 client = discord.Client()
 
