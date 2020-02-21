@@ -32,10 +32,7 @@ async def on_message(message):
         embed.set_image(url="https://cdn.discordapp.com/attachments/680419909284528148/680433158373900318/00000.jpg") 
         await client.send_message(message.channel, embed=embed)
 
-    if message.content == "$notice":
-        await client.send_message(channel, fmt.format(member, member.server))
-        await client.send_message(member, "Kaphen(케이픈)에 온걸 환영합니다!")
-        await client.send_message(member, "케이픈에서 통화/채팅/게임 플레이시 모든내용은 유튜브에 업로드될 수 있습니다.")
+
 
 @client.event
 async def on_member_join(member):
