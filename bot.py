@@ -5,8 +5,6 @@ import re
 
 client = discord.Client()
 
-token = "NjY3MDMxOTE2MTY3NDMwMTY2.Xk_7ig.A701HC2xs2YIR8u5vlYb-z8dKJc"
-
 @client.event
 async def on_ready():
     print("다음으로 로그인합니다 : ")
@@ -41,5 +39,5 @@ async def on_member_join(member):
     await client.send_message(channel, fmt.format(member, member.server))
     await client.send_message(member, "Kaphen(케이픈)에 온걸 환영합니다!")
     await client.send_message(member, "케이픈에서 통화/채팅/게임 플레이시 모든내용은 유튜브에 업로드될 수 있습니다.")
-
-client.run(token)
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
