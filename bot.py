@@ -25,7 +25,7 @@ async def on_message(message):
 
     if message.content == "$help":
         await client.send_message(message.channel, "command")
-        embed = discord.Embed(title="명령어", description="아직 아무것도 없지요 헤헤", color=0x00ff00) 
+        embed = discord.Embed(title="명령어", description="뭐하지", color=0x00ff00) 
         embed.set_footer(text = "by mimiru") 
         embed.set_image(url="https://cdn.discordapp.com/attachments/680419909284528148/680433158373900318/00000.jpg") 
         await client.send_message(message.channel, embed=embed)
